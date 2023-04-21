@@ -1,6 +1,6 @@
 from aiogram import Bot, Dispatcher, types, executor
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
-from config import TOKEN_API
+from token import TOKEN_API
 
 bot = Bot(TOKEN_API)
 dp = Dispatcher(bot)
@@ -250,56 +250,57 @@ async def siao_command(message: types.Message):
 
     await message.delete()
 
-# @dp.message_handler(text='Лиза')
-# async def lisa_command(message: types.Message):
-#     await bot.send_photo(chat_id=message.from_user.id,
-#                         photo='https://genshindb.ru/wp-content/uploads/2021/07/Vozvishenie-pers-gyde-24-1024x576.jpg')
-#
-# @dp.message_handler(text='Лиза')
-# async def lisa_command(message: types.Message):
-#     await bot.send_photo(chat_id=message.from_user.id,
-#                         photo='https://genshindb.ru/wp-content/uploads/2021/07/Vozvishenie-pers-gyde-25-1024x576.jpg')
-#
-# @dp.message_handler(text='Лиза')
-# async def lisa_command(message: types.Message):
-#     await bot.send_photo(chat_id=message.from_user.id,
-#                         photo='https://genshindb.ru/wp-content/uploads/2021/07/Vozvishenie-pers-gyde-26-1024x576.jpg')
-#
-# @dp.message_handler(text='Лиза')
-# async def lisa_command(message: types.Message):
-#     await bot.send_photo(chat_id=message.from_user.id,
-#                         photo='https://genshindb.ru/wp-content/uploads/2021/07/Vozvishenie-pers-gyde-27-1024x576.jpg')
-#
-# @dp.message_handler(text='Лиза')
-# async def lisa_command(message: types.Message):
-#     await bot.send_photo(chat_id=message.from_user.id,
-#                         photo='https://genshindb.ru/wp-content/uploads/2021/07/Vozvishenie-pers-gyde-28-1024x576.jpg')
-#
-# @dp.message_handler(text='Лиза')
-# async def lisa_command(message: types.Message):
-#     await bot.send_photo(chat_id=message.from_user.id,
-#                         photo='https://genshindb.ru/wp-content/uploads/2021/07/Vozvishenie-pers-gyde-29-1024x576.jpg')
-#
-# @dp.message_handler(text='Лиза')
-# async def lisa_command(message: types.Message):
-#     await bot.send_photo(chat_id=message.from_user.id,
-#                         photo='https://genshindb.ru/wp-content/uploads/2021/07/Vozvishenie-pers-gyde-30-1024x576.jpg')
-#
-# @dp.message_handler(text='Лиза')
-# async def lisa_command(message: types.Message):
-#     await bot.send_photo(chat_id=message.from_user.id,
-#                         photo='https://genshindb.ru/wp-content/uploads/2021/07/Vozvishenie-pers-gyde-31-1024x576.jpg')
-#
-# @dp.message_handler(text='Лиза')
-# async def lisa_command(message: types.Message):
-#     await bot.send_photo(chat_id=message.from_user.id,
-#                         photo='https://genshindb.ru/wp-content/uploads/2021/07/Vozvishenie-pers-gyde-32-1024x576.jpg')
-#
-# @dp.message_handler(text='Лиза')
-# async def lisa_command(message: types.Message):
-#     await bot.send_photo(chat_id=message.from_user.id,
-#                         photo='https://genshindb.ru/wp-content/uploads/2021/07/Vozvishenie-pers-gyde-33-1024x576.jpg')
-#
+@dp.message_handler(text='Тарталья')
+async def tarta_command(message: types.Message):
+    await bot.send_photo(chat_id=message.from_user.id,
+                        photo='https://genshindb.ru/wp-content/uploads/2021/07/Vozvishenie-pers-gyde-24-1024x576.jpg')
+
+@dp.message_handler(text='Фишль')
+async def fishl_command(message: types.Message):
+    await bot.send_photo(chat_id=message.from_user.id,
+                        photo='https://genshindb.ru/wp-content/uploads/2021/07/Vozvishenie-pers-gyde-25-1024x576.jpg')
+
+@dp.message_handler(text='Ху тао')
+async def hutao_command(message: types.Message):
+    await bot.send_photo(chat_id=message.from_user.id,
+                        photo='https://genshindb.ru/wp-content/uploads/2021/07/Vozvishenie-pers-gyde-26-1024x576.jpg')
+
+@dp.message_handler(text='Чжун Ли')
+async def chzhun_command(message: types.Message):
+    await bot.send_photo(chat_id=message.from_user.id,
+                        photo='https://genshindb.ru/wp-content/uploads/2021/07/Vozvishenie-pers-gyde-27-1024x576.jpg')
+
+@dp.message_handler(text='Ци Ци')
+async def zizi_command(message: types.Message):
+    await bot.send_photo(chat_id=message.from_user.id,
+                        photo='https://genshindb.ru/wp-content/uploads/2021/07/Vozvishenie-pers-gyde-28-1024x576.jpg')
+
+
+@dp.message_handler(text='Чун Юнь')
+async def chun_command(message: types.Message):
+    await bot.send_photo(chat_id=message.from_user.id,
+                        photo='https://genshindb.ru/wp-content/uploads/2021/07/Vozvishenie-pers-gyde-29-1024x576.jpg')
+
+@dp.message_handler(text='Эмбер')
+async def ember_command(message: types.Message):
+    await bot.send_photo(chat_id=message.from_user.id,
+                        photo='https://genshindb.ru/wp-content/uploads/2021/07/Vozvishenie-pers-gyde-30-1024x576.jpg')
+
+@dp.message_handler(text='Эола')
+async def eola_command(message: types.Message):
+    await bot.send_photo(chat_id=message.from_user.id,
+                        photo='https://genshindb.ru/wp-content/uploads/2021/07/Vozvishenie-pers-gyde-31-1024x576.jpg')
+
+@dp.message_handler(text='Янь Фей')
+async def yanfei_command(message: types.Message):
+    await bot.send_photo(chat_id=message.from_user.id,
+                        photo='https://genshindb.ru/wp-content/uploads/2021/07/Vozvishenie-pers-gyde-32-1024x576.jpg')
+
+dp.message_handler(text='Кадзуха')
+async def kadz_command(message: types.Message):
+    await bot.send_photo(chat_id=message.from_user.id,
+                        photo='https://genshindb.ru/wp-content/uploads/2021/07/Vozvishenie-pers-gyde-33-1024x576.jpg')
+
 
 if __name__ == '__main__':
     executor.start_polling(dispatcher=dp,
